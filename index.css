@@ -64,6 +64,7 @@ main{
     /* border-color: none; */
     backdrop-filter: blur(5px);
 }
+
 .pfp{
     width: 180px;
     height:180px;
@@ -169,4 +170,58 @@ main{
     to {
         transform: translateX(0);
     }
+}
+.myinfo {
+  margin-top: 25%;
+  margin-left: -88%;
+}
+
+.myinfo h2 {
+  margin-top: 20%;
+  margin-left: 10px;
+
+}
+
+.skills {
+     display: flex;
+     gap: 15px;
+     margin-top: 0%;
+     flex-direction: column;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill img {
+  width: 40px;
+  height: auto;
+}
+
+.skill span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.skill {
+  animation: slide 1s ease forwards;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.video{
+    display: flex;
+    position: absolute;
+    top:70%;
+    left:30px;
+    overflow: hidden;
 }
